@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "lcmods",
+	"version": "${version}",
+	"name": "Low Cortisol Mods",
+	"description": "Leichtgewichtige Singleplayer-Quality-of-Life-Mods: Koordinaten-HUD, Homes/Fast-Travel, VeinCapitator und Waypoint-Kompass.",
+	"authors": [
+		"waveyjuri"
+	],
+	"contact": {
+		"sources": "https://github.com/waveyjuri/leightweight-singleplayer-mods"
+	},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.waveyjuri.lcmods.LcMods"
+		],
+		"client": [
+			"net.waveyjuri.lcmods.client.LcModsClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": ">=26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
