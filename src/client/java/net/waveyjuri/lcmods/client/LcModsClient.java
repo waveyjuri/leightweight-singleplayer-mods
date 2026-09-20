@@ -11,10 +11,14 @@ import net.minecraft.resources.Identifier;
 import net.waveyjuri.lcmods.LcMods;
 import net.waveyjuri.lcmods.client.coords.CoordsHud;
 import net.waveyjuri.lcmods.client.waypoint.WaypointHud;
+import net.waveyjuri.lcmods.client.zoom.Zoom;
 
 public class LcModsClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
+		// Zoom-Taste registrieren (Standard C, im Menue belegbar)
+		Zoom.register();
+
 		// HUD-Elemente hinter die Vanilla-Overlays haengen (unter Chat etc.)
 		HudElementRegistry.attachElementAfter(VanillaHudElements.MISC_OVERLAYS,
 			Identifier.fromNamespaceAndPath(LcMods.MOD_ID, "coords"), new CoordsHud());

@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "net.waveyjuri.lcmods.client.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"GameRendererZoomMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
