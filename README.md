@@ -52,7 +52,7 @@ When it's done, open the Minecraft launcher, select the **`fabric-loader-0.19.5-
 
 1. Install Fabric Loader for Minecraft 26.3: <https://fabricmc.net/use/installer/>
 2. Drop these two files into `.minecraft/mods/`:
-   - `dist/lcmods-1.1.0.jar` (from this repo)
+   - `dist/lcmods-1.1.1.jar` (from this repo)
    - Fabric API for 26.3: <https://modrinth.com/mod/fabric-api>
 
 ## Build from source

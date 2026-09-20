@@ -3,7 +3,7 @@
 	"package": "net.waveyjuri.lcmods.client.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"client": [
-		"GameRendererZoomMixin"
+		"CameraZoomMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
