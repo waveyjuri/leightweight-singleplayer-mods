@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": "minecraft:magma_block",
+    "G": "minecraft:glowstone_dust"
+  },
+  "pattern": [
+    "G",
+    "M",
+    "G"
+  ],
+  "result": {
+    "id": "minecraft:blaze_rod"
+  }
+}

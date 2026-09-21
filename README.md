@@ -13,8 +13,28 @@ Each feature replaces a per-tick datapack with efficient, event-driven code — 
 | **Homes / fast-travel** | Save and teleport to named home points | `/sethome [name]`, `/home [name]`, `/homes`, `/delhome <name>` |
 | **VeinCapitator** | Sneak + break a log or ore with the matching tool to mine the whole vein at once | Sneak + mine (max 128 blocks, never breaks your tool, respects Fortune/Silk Touch) |
 | **Zoom** | OptiFine-style zoom | Hold **C** (rebindable under Options ▸ Controls ▸ *Low Cortisol Mods*) |
+| **Alternative recipes** | Craft 10 useful-but-grindy items an easier way (slimeball, saddle, name tag, …) | Just craft them — see recipe list below |
 
 `/homes` prints a clickable list with `[TP]` and `[X]` buttons.
+
+## Alternative recipes
+
+Ten items that are useful early but annoying (or impossible) to obtain the vanilla way get a cheap, convenient crafting recipe. All recipes show up in the recipe book once you pick up one of their ingredients.
+
+| Result | Recipe |
+|---|---|
+| **Slimeball** | 1 honey bottle (shapeless) |
+| **Saddle** | 3 leather + 2 iron ingots (`LLL` / `I·I`) |
+| **Name tag** | 1 paper + 1 string + 1 iron ingot (shapeless) |
+| **Ender pearl** | 4 amethyst shards (shapeless) |
+| **String** ×4 | 1 wool of any color (shapeless) |
+| **Gunpowder** ×2 | 1 coal/charcoal + 1 flint + 1 redstone (shapeless) |
+| **Blaze rod** | 2 glowstone dust + 1 magma block (`G` / `M` / `G`) |
+| **Ghast tear** | 1 slimeball + 1 glowstone dust (shapeless) |
+| **Phantom membrane** | 2 leather + 1 feather (shapeless) |
+| **Wither skeleton skull** | 5 coal/charcoal + 1 bone block (`CCC` / `C·C` with bone block in center) |
+
+These are pure data (recipe JSON) — no code runs at all. Don't want them? Delete the mod's `data/lcmods/recipe/` entries, or just don't use the recipes.
 
 ## Requirements
 
@@ -52,7 +72,7 @@ When it's done, open the Minecraft launcher, select the **`fabric-loader-0.19.5-
 
 1. Install Fabric Loader for Minecraft 26.3: <https://fabricmc.net/use/installer/>
 2. Drop these two files into `.minecraft/mods/`:
-   - `dist/lcmods-1.1.1.jar` (from this repo)
+   - `dist/lcmods-1.2.0.jar` (from this repo)
    - Fabric API for 26.3: <https://modrinth.com/mod/fabric-api>
 
 ## Build from source
