@@ -10,6 +10,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.waveyjuri.lcmods.LcMods;
 import net.waveyjuri.lcmods.client.coords.CoordsHud;
+import net.waveyjuri.lcmods.client.saturation.SaturationHud;
 import net.waveyjuri.lcmods.client.waypoint.WaypointHud;
 import net.waveyjuri.lcmods.client.zoom.Zoom;
 
@@ -24,6 +25,8 @@ public class LcModsClient implements ClientModInitializer {
 			Identifier.fromNamespaceAndPath(LcMods.MOD_ID, "coords"), new CoordsHud());
 		HudElementRegistry.attachElementAfter(VanillaHudElements.MISC_OVERLAYS,
 			Identifier.fromNamespaceAndPath(LcMods.MOD_ID, "waypoint"), new WaypointHud());
+		HudElementRegistry.attachElementAfter(VanillaHudElements.MISC_OVERLAYS,
+			Identifier.fromNamespaceAndPath(LcMods.MOD_ID, "saturation"), new SaturationHud());
 
 		// Client-Commands zum Ein-/Ausblenden der HUDs
 		ClientCommandRegistrationCallback.EVENT.register((dispatcher, registryAccess) -> {
@@ -35,6 +38,11 @@ public class LcModsClient implements ClientModInitializer {
 			dispatcher.register(LiteralArgumentBuilder.<FabricClientCommandSource>literal("waypoint").executes(ctx -> {
 				boolean on = WaypointHud.toggle();
 				ctx.getSource().sendFeedback(Component.literal("Waypoint-HUD " + (on ? "an" : "aus")));
+				return 1;
+			}));
+			dispatcher.register(LiteralArgumentBuilder.<FabricClientCommandSource>literal("saturation").executes(ctx -> {
+				boolean on = SaturationHud.toggle();
+				ctx.getSource().sendFeedback(Component.literal("Sättigungs-HUD " + (on ? "an" : "aus")));
 				return 1;
 			}));
 		});

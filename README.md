@@ -10,6 +10,7 @@ Each feature replaces a per-tick datapack with efficient, event-driven code — 
 |---|---|---|
 | **Coordinates HUD** | XYZ, facing direction and real tool durability, bottom-left | `/coords` to toggle |
 | **Waypoint compass** | Arrow, name and distance to your nearest home (current dimension), top-center | `/waypoint` to toggle |
+| **Saturation bar** | Thin gold bar directly above the hunger bar showing your hidden saturation level (AppleSkin-style) | `/saturation` to toggle |
 | **Homes / fast-travel** | Save and teleport to named home points | `/sethome [name]`, `/home [name]`, `/homes`, `/delhome <name>` |
 | **VeinCapitator** | Sneak + break a log or ore with the matching tool to mine the whole vein at once | Sneak + mine (max 128 blocks, never breaks your tool, respects Fortune/Silk Touch) |
 | **Zoom** | OptiFine-style zoom | Hold **C** (rebindable under Options ▸ Controls ▸ *Low Cortisol Mods*) |
@@ -72,7 +73,7 @@ When it's done, open the Minecraft launcher, select the **`fabric-loader-0.19.5-
 
 1. Install Fabric Loader for Minecraft 26.3: <https://fabricmc.net/use/installer/>
 2. Drop these two files into `.minecraft/mods/`:
-   - `dist/lcmods-1.2.0.jar` (from this repo)
+   - `dist/lcmods-1.3.0.jar` (from this repo)
    - Fabric API for 26.3: <https://modrinth.com/mod/fabric-api>
 
 ## Build from source
